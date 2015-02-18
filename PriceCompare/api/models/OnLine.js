@@ -8,6 +8,12 @@
 module.exports = {
 
   attributes: {
+    alt_lookup:{
+      type:'string'
+    },
+    upc:{
+      type:'string'
+    }
 
   }
 };

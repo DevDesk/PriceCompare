@@ -74,13 +74,30 @@ module.exports.connections = {
   *                                                                          *
   *                                                                          *
   ***************************************************************************/
+  // myPostgresqlServer: {
+  //   adapter: 'sails-postgresql',
+  //   host: 'localhost',
+  //   // user: '',
+  //   // password: '',
+  //   database: 'sails_price_compare',
+  //   schema: true,
+  //   port: 5432,
+  //   pool: false,
+  //   ssl: false
+  // },
+//   config: {
+//   database: 'sails_price_compare',
+//   host: 'localhost',
+//   // user: 'root',
+//   // password: '',
+//   port: 5432,
+//   pool: false,
+//   ssl: false
+// };
   myPostgresqlServer: {
     adapter: 'sails-postgresql',
     host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'sails_price_compare',
-    schema: true
+    database: 'sails_price_compare'
   }
 
 
