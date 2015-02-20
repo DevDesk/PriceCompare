@@ -37,6 +37,12 @@ module.exports = {
       }
     });
   },
+  logout:function(req,res){
+    delete req.session.user;
+    //need to send some data back or it will hang
+    //use result:true in angular later... if result is true...do something
+    res.send({result:true});
+  },
   check:function(req,res){
     // res.send("check route working")  //test route in postman
     res.send({
