@@ -13,7 +13,6 @@ module.exports = {
     // res.send('this is a login route')
     User.findOne({where:{email:req.body.email}})
     .exec(function(err,user){
-      // res.send(user);
       if(err) return res.send(err);
       if(user){
         // res.send(user);
@@ -32,7 +31,7 @@ module.exports = {
       }else{
         res.send({
           result:false,
-          error:"User not found. Please signup."
+          error:"User not found. Please signup!!!!!!!"
         });
       }
     });
