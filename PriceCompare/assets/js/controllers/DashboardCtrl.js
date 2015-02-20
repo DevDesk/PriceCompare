@@ -1,4 +1,5 @@
-PriceCompareApp.controller('DashboardCtrl',['$scope','$http','AlertService',function($scope,$http,AlertService){
+PriceCompareApp.controller('DashboardCtrl',['$scope','$http','AlertService','UserService',function($scope,$http,AlertService,UserService){
   $scope.name = "Steve";
-  alert('Alert Test Successful!!!!')
+  UserService.login()
+  // alert('Alert Test Successful!!!!')
 }])
