@@ -36,7 +36,12 @@ module.exports = {
         });
       }
     });
-
+  },
+  check:function(req,res){
+    // res.send("check route working")  //test route in postman
+    res.send({
+      user: (req.session.user || false)
+    });
   }
 };
 
