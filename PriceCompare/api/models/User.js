@@ -26,6 +26,15 @@ module.exports = {
       required:true
     },
 
+    ////associations
+
+    ////has many
+    stores:{
+      collection: 'store',
+      via: 'owner'
+    },
+
+    ////instance methods
     toJSON: function(){
       var userObj = this.toObject();
       delete userObj.password;
