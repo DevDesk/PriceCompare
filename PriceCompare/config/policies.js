@@ -19,6 +19,13 @@
 
 module.exports.policies = {
 
+  '*':['forbidden'],
+  'PagesController':true,
+  'AuthController':true,
+  'UserController':{
+    '*':['sessionAuth'],
+    'create':true
+  }
   /***************************************************************************
   *                                                                          *
   * Default policy for all controllers and actions (`true` allows public     *
