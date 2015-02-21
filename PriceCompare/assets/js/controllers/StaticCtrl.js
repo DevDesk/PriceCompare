@@ -1,0 +1,3 @@
+PriceCompareApp.controller('StaticCtrl',[function(){
+
+}]);
