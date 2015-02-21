@@ -26,6 +26,12 @@ module.exports = {
     ////belongs to
     owner: {
       model: 'user'
+    },
+
+    ////has many
+    products:{
+      collection: 'product',
+      via: 'store'
     }
 
   }
