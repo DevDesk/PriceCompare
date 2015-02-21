@@ -32,6 +32,11 @@ module.exports = {
     products:{
       collection: 'product',
       via: 'store'
+    },
+
+    competitors:{
+      collection: 'competitor',
+      via: 'store'
     }
 
   }
