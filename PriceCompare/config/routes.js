@@ -38,7 +38,7 @@ module.exports.routes = {
   '/': "PagesController.index",
 
   'post /api/auth':"AuthController.login",
-  'delete api/auth':"AuthController.logout",
+  'delete /api/auth':"AuthController.logout",
   'get /api/auth':"AuthController.check",
 
   "get *":{
