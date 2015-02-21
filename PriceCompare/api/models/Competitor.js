@@ -27,13 +27,13 @@ module.exports = {
     ////belongs to
     store: {
       model: 'store'
-    }
+    },
 
     // ////has many
-    // products:{
-    //   collection: 'product',
-    //   via: 'store'
-    // }
+    compProducts:{
+      collection: 'compProduct',
+      via: 'competitor'
+    }
 
   }
 };

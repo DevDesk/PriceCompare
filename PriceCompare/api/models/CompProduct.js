@@ -1,5 +1,5 @@
 /**
-* Product.js
+* CompProduct.js
 *
 * @description :: TODO: You might write a short summary of how this model works and what it represents here.
 * @docs        :: http://sailsjs.org/#!documentation/models
@@ -8,6 +8,7 @@
 module.exports = {
 
   attributes: {
+
     itemName: 'string',
     itemNumber: 'string',
     shortDescription: 'text',
@@ -36,11 +37,11 @@ module.exports = {
     averageUnitCost: 'string',
     dataSource: {
       type: 'string',
-      enum: ['QuickBooks','Magento']
+      enum: ['Mozenda','Google Shopping']
     },
     dataSourceType: {
       type: 'string',
-      enum: ['POS','eCommerce']
+      enum: ['web scrape','API']
     },
     productSource: {
       type: 'string',
@@ -51,8 +52,8 @@ module.exports = {
     ////associations
 
     ////belongs to
-    store:{
-      model: 'store'
+    competitor:{
+      model: 'competitor'
     }
 
 
