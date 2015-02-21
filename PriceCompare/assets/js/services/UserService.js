@@ -1,6 +1,7 @@
 PriceCompareApp.factory('UserService',['$http',function($http){
 
   return{
+
     login: function(email,password,callback){
       // alert('this will log the user in')
       var self = this;
@@ -37,9 +38,9 @@ PriceCompareApp.factory('UserService',['$http',function($http){
       $http.get('api/auth')
       .success(function (data){
         if(data && data.user){
-          console.log(self.currentUser=data.user);
+          self.currentUser=data.user;
         }else{
-          console.log(self.currentUser=false)
+          self.currentUser=false;
         }
         callback(null,data);
       }).error(function(err){
@@ -47,4 +48,4 @@ PriceCompareApp.factory('UserService',['$http',function($http){
       })
     }
   }
-}])
+}]);
