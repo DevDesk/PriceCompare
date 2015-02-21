@@ -12,8 +12,18 @@ PriceCompareApp.config(['$routeProvider','$locationProvider', function(
     templateUrl:'/views/dashboard.html',
     controller:'DashboardCtrl'
   })
+  .when('/about',{
+    templateUrl:'/views/about.html',
+    controller:'StaticCtrl'
+  })
+  .when('/faq',{
+    templateUrl:'/views/faq.html',
+    controller:'StaticCtrl'
+  })
+}]);
 
-
-
-
+PriceCompareApp.run(['UserService',function(UserService){
+  UserService.check(function(err,data){
+    console.log('check',err,data);
+  });
 }]);
