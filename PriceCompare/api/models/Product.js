@@ -32,6 +32,18 @@ module.exports = {
     shippingPrice: 'string',
     msrp: 'string',
     averageUnitCost: 'string',
+    dataSource: {
+      type: 'string',
+      enum: ['QuickBooks','Magento']
+    },
+    dataSourceType: {
+      type: 'string',
+      enum: ['POS','eCommerce']
+    },
+    productSource: {
+      type: 'string',
+      enum: ['in-store','online']
+    },
     data: 'json',
 
     ////associations
