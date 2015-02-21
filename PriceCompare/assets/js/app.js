@@ -16,8 +16,8 @@ PriceCompareApp.config(['$routeProvider','$locationProvider', function(
     templateUrl:'/views/about.html',
     controller:'StaticCtrl'
   })
-  .when('/faq',{
-    templateUrl:'/views/faq.html',
+  .when('/contact',{
+    templateUrl:'/views/contact.html',
     controller:'StaticCtrl'
   })
 }]);
