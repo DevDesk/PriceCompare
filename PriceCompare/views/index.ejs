@@ -18,21 +18,9 @@
         <ul class="nav navbar-nav">
           <!-- function to determine if button is active-->
           <li ng-class="{active:isActive('/about')}"><a href="/about">About</a></li>
-          <li ng-class="{active:isActive('/faq')}"><a href="/faq">FAQ</a></li>
+          <li ng-class="{active:isActive('/contact')}"><a href="/contact">Contact</a></li>
           <!-- add dropdown directive (no quotes) which is UI Bootstrap directive -->
-          <li class="dropdown" dropdown>
             <!-- add dropdown-toggle directive (no quotes) which is UI Bootstrap directive -->
-            <a href="#" dropdown-toggle class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
         </ul>
         <form ng-submit="search()" class="navbar-form navbar-left" role="search">
           <div class="form-group">
@@ -48,9 +36,9 @@
             <!-- add dropdown-toggle directive (no quotes) which is UI Bootstrap directive -->
             <a href="#" dropdown-toggle class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{currentUser.firstName || 'User'}} <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Setting</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Something else</a></li>
+              <li><a href="#">Stores</a></li>
+              <li><a href="#">Competitors</a></li>
+              <li><a href="#">Import Data</a></li>
               <li class="divider"></li>
               <li><a href="" ng-click="logout()">Logout</a></li>
             </ul>
