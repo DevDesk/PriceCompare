@@ -1,0 +1,118 @@
+#top-navbar {
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    height:53px;
+    z-index: 222;
+}
+
+.navbar-default {
+  background-color: #b0cc9a;
+  border-color: #667e51;
+}
+.navbar-default .navbar-brand {
+  color: #373737;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #f7e8b1;
+}
+.navbar-default .navbar-text {
+  color: #373737;
+}
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter,
+.navbar .nav > li.current-menu-item > a,
+.navbar .nav > li.current-menu-ancestor > a {
+/*  min-height:28px;
+  height:28px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height:28px;*/
+  font-style: bold;
+  font-size: 18px;
+  /*font-family: 'Kreon', serif;*/ /*5*/
+  /*font-family: 'Lora', serif;*/ /*4*/
+  /*font-family: 'Merriweather', serif;*/  /*3*/
+  /*font-family: 'Playfair Display', serif;*/ /*2*/
+  font-family: 'Droid Serif', serif;  /*1*/
+}
+.navbar-default .navbar-nav > li > a {
+  color: #373737;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #f7e8b1;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #f7e8b1;
+  background-color: #667e51;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #f7e8b1;
+  background-color: #667e51;
+}
+.navbar-default .navbar-toggle {
+  border-color: #667e51;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #667e51;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #373737;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #373737;
+}
+.navbar-default .navbar-link {
+  color: #373737;
+}
+.navbar-default .navbar-link:hover {
+  color: #f7e8b1;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #373737;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #f7e8b1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #f7e8b1;
+    background-color: #667e51;
+  }
+}
+
+/*.btn-custom {
+  background-color: hsl(80, 34%, 69%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d8e2c4", endColorstr="#b8ca95");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#d8e2c4), to(#b8ca95));
+  background-image: -moz-linear-gradient(top, #d8e2c4, #b8ca95);
+  background-image: -ms-linear-gradient(top, #d8e2c4, #b8ca95);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d8e2c4), color-stop(100%, #b8ca95));
+  background-image: -webkit-linear-gradient(top, #d8e2c4, #b8ca95);
+  background-image: -o-linear-gradient(top, #d8e2c4, #b8ca95);
+  background-image: linear-gradient(#d8e2c4, #b8ca95);
+  border-color: #b8ca95 #b8ca95 hsl(80, 34%, 65.5%);
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.23);
+  -webkit-font-smoothing: antialiased;
+}*/
+
+.btn-custom {
+  background-color: hsl(75, 38%, 53%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e0e7ca", endColorstr="#9db459");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#e0e7ca), to(#9db459));
+  background-image: -moz-linear-gradient(top, #e0e7ca, #9db459);
+  background-image: -ms-linear-gradient(top, #e0e7ca, #9db459);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e0e7ca), color-stop(100%, #9db459));
+  background-image: -webkit-linear-gradient(top, #e0e7ca, #9db459);
+  background-image: -o-linear-gradient(top, #e0e7ca, #9db459);
+  background-image: linear-gradient(#e0e7ca, #9db459);
+  border-color: #9db459 #9db459 hsl(75, 38%, 45%);
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.52);
+  -webkit-font-smoothing: antialiased;
+}
