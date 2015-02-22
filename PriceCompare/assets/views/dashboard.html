@@ -1,4 +1,17 @@
-<h1>This is my Dashboard</h1>
 <alerts></alerts>
-<h4>My name is {{name}}</h4>
-<h5>My email is {{email}}</h5>
+<bg-splitter orientation="vertical">
+  <bg-pane min-size="100">
+    <div class="pane-container">
+      Pane 1
+      <h1>This is my Dashboard</h1>
+    </div>
+  </bg-pane>
+  <bg-pane min-size="150">
+    <bg-splitter orientation="vertical">
+      <bg-pane min-size="100" class="pane-container">
+        Pane 2
+        <h4>My name is {{name}}</h4>
+      </bg-pane>
+    </bg-splitter>
+  </bg-pane>
+</bg-splitter>
