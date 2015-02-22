@@ -2,16 +2,33 @@
 <bg-splitter orientation="vertical">
   <bg-pane min-size="100">
     <div class="pane-container">
-      Pane 1
-      <h1>This is my Dashboard</h1>
+      <div class="row">
+        <div class="col-sm-12">
+          <canvas id="line" class="chart chart-line" data="data"
+            labels="labels" legend="true" series="series"
+            click="onClick" style="max-height:260px">
+          </canvas>
+        </div>
+      </div>
     </div>
   </bg-pane>
   <bg-pane min-size="150">
-    <bg-splitter orientation="vertical">
-      <bg-pane min-size="100" class="pane-container">
+
+        <table ng-table="tableParams" class="table ng-table-responsive">
+          <tr ng-repeat="user in $data">
+            <td data-title="'Name'" sortable="'name'">
+              {{user.name}}
+            </td>
+            <td data-title="'Age'" sortable="'age'">
+              {{user.age}}
+            </td>
+          </tr>
+        </table>
+
+
+
         Pane 2
         <h4>My name is {{name}}</h4>
-      </bg-pane>
-    </bg-splitter>
+
   </bg-pane>
 </bg-splitter>
