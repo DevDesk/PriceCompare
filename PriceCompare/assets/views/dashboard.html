@@ -3,17 +3,22 @@
   <bg-pane min-size="100">
     <div class="pane-container">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-6">
           <canvas id="line" class="chart chart-line" data="data"
             labels="labels" legend="true" series="series"
-            click="onClick" style="max-height:260px">
+            click="onClick" style="max-height:150px">
+          </canvas>
+        </div>
+        <div class="col-sm-6">
+          <canvas id="line" class="chart chart-line" data="data"
+            labels="labels" legend="true" series="series"
+            click="onClick" style="max-height:150px">
           </canvas>
         </div>
       </div>
     </div>
   </bg-pane>
-  <bg-pane min-size="150">
-
+  <bg-pane min-size="150" class="bg-color">
         <table ng-table="tableParams" class="table ng-table-responsive">
           <tr ng-repeat="user in $data">
             <td data-title="'Name'" sortable="'name'">
@@ -24,11 +29,5 @@
             </td>
           </tr>
         </table>
-
-
-
-        Pane 2
-        <h4>My name is {{name}}</h4>
-
   </bg-pane>
 </bg-splitter>

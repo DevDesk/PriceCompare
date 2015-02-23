@@ -4,6 +4,11 @@ body
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.bg-color
+{
+  background-color: lightgrey;
+}
+
 .pane-container
 {
   padding: 10px;
