@@ -12,27 +12,16 @@
 
 module.exports = {
 
-  /***************************************************************************
-   * Set the default database connection for models in the production        *
-   * environment (see config/connections.js and config/models.js )           *
-   ***************************************************************************/
 
-  // models: {
-  //   connection: 'someMysqlServer'
-  // },
+  connections:{
+    prodPostgresqlServer: {
+      adapter: 'sails-postgresql',
+      url: process.env.HEROKU_POSTGRESQL_BLACK_URL
+    }
+  },
 
-  /***************************************************************************
-   * Set the port in the production environment to 80                        *
-   ***************************************************************************/
-
-  // port: 80,
-
-  /***************************************************************************
-   * Set the log level in production environment to "silent"                 *
-   ***************************************************************************/
-
-  // log: {
-  //   level: "silent"
-  // }
+  models: {
+    connection: 'prodPostgresqlServer'
+  }
 
 };
