@@ -1,33 +1,60 @@
 <alerts></alerts>
 <bg-splitter orientation="vertical">
-  <bg-pane min-size="100">
-    <div class="pane-container">
-      <div class="row">
-        <div class="col-sm-6">
-          <canvas id="line" class="chart chart-line" data="data"
-            labels="labels" legend="true" series="series"
-            click="onClick" style="max-height:150px">
-          </canvas>
-        </div>
-        <div class="col-sm-6">
-          <canvas id="line" class="chart chart-line" data="data"
-            labels="labels" legend="true" series="series"
-            click="onClick" style="max-height:150px">
-          </canvas>
+    <bg-pane min-size="100">
+      <div class="pane-container" class="bg-color-pane1">
+        <div class="row">
+          <div class="col-sm-7">
+            <canvas id="line" class="chart chart-line" data="data" options="options" labels="labels" legend="false" series="series" click="onClick" style="max-height:275px">
+            </canvas>
+<!--             <div style="width:400px; height:200px;">
+              <canvas id="myChart"></canvas>
+            </div> -->
+          </div>
+          <div class="col-sm-5 text-center" style="color: grey">
+            <canvas id="doughnut" class="chart chart-doughnut" data="data2" labels="labels2" style="max-heigh:275px">
+            </canvas>
+            <h4>eComm | In-Store</h4>
+          </div>
         </div>
       </div>
-    </div>
-  </bg-pane>
-  <bg-pane min-size="150" class="bg-color">
-        <table ng-table="tableParams" class="table ng-table-responsive">
-          <tr ng-repeat="user in $data">
-            <td data-title="'Name'" sortable="'name'">
-              {{user.name}}
-            </td>
-            <td data-title="'Age'" sortable="'age'">
-              {{user.age}}
-            </td>
-          </tr>
-        </table>
-  </bg-pane>
+    </bg-pane>
+    <bg-pane min-size="150" class="bg-color">
+          <table ng-table="tableParams" class="table ng-table-responsive" style="background-color: white; border-radius:4px">
+            <tr ng-repeat="user in $data">
+<!--               <td data-title="'Name'" sortable="'name'">
+                {{user.name}}
+              </td>
+              <td data-title="'Age'" sortable="'age'">
+                {{user.age}}
+              </td> -->
+              <td data-title="'Number'" sortable="'itemNumber'">
+                {{user.itemNumber}}
+              </td>
+               <td data-title="'Name'" sortable="'itemName'">
+                {{user.itemName}}
+              </td>
+              <td data-title="'Manufacturer'" sortable="'manufacturer'">
+                {{user.manufacturer}}
+              </td>
+              <td data-title="'Alt Lookup'" sortable="'altLookup'">
+                {{user.altLookup}}
+              </td>
+              <td data-title="'Brand'" sortable="'brand'">
+                {{user.brand}}
+              </td>
+              <td data-title="'In-Store'" sortable="'storePrice'">
+                {{user.storePrice}}
+              </td>
+              <td data-title="'Price'" sortable="'price'">
+                {{user.price}}
+              </td>
+              <td data-title="'Comp1'" sortable="'comp1Price'">
+                {{user.comp1Price}}
+              </td>
+              <td data-title="'Comp2'" sortable="'comp2Price'">
+                {{user.comp2Price}}
+              </td>
+            </tr>
+          </table>
+    </bg-pane>
 </bg-splitter>

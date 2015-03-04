@@ -19,6 +19,17 @@
  * http://sailsjs.org/#/documentation/reference/sails.config/sails.config.connections.html
  */
 
-module.exports.connections = {
+// module.exports.connections = {
+//   connections:{
+//     devPostgresqlServer: {
+//       adapter: 'sails-postgresql',
+//       host: 'localhost',
+//       database: 'sails_price_compare'
+//     }
+//   },
 
-};
+//   models: {
+//     connection: 'devPostgresqlServer'
+//   }
+
+// };

@@ -6,7 +6,12 @@ body
 
 .bg-color
 {
-  background-color: lightgrey;
+  background-color: white;
+}
+
+.bg-color-pane1
+{
+  background-color: #F6E8B1;
 }
 
 .pane-container
@@ -81,12 +86,18 @@ body
 
 .split-panes.vertical > .split-pane1
 {
-  height: 50%;
+  padding-top: 25px;
+  padding-left: 25px;
+  height: 55%;
 }
 
 .split-panes.vertical > .split-pane2
 {
-  top: 50%;
+  background-color: #F6E8B1;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  top: 55%;
   bottom: 0px;
   border-top: 2px solid #aaa;
 }
