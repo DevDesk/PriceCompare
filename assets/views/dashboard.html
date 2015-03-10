@@ -20,7 +20,8 @@
     </bg-pane>
     <bg-pane min-size="150" class="bg-color">
           <table ng-table="tableParams" class="table ng-table-responsive" style="background-color: white; border-radius:4px">
-            <tr ng-repeat="user in $data">
+<!--             <tr ng-repeat="user in $data"> -->
+            <tr ng-repeat="product in products">
 <!--               <td data-title="'Name'" sortable="'name'">
                 {{user.name}}
               </td>
@@ -28,31 +29,31 @@
                 {{user.age}}
               </td> -->
               <td data-title="'Number'" sortable="'itemNumber'">
-                {{user.itemNumber}}
+                {{product.itemNumber}}
               </td>
                <td data-title="'Name'" sortable="'itemName'">
-                {{user.itemName}}
+                {{product.itemName}}
               </td>
               <td data-title="'Manufacturer'" sortable="'manufacturer'">
-                {{user.manufacturer}}
+                {{product.manufacturer}}
               </td>
               <td data-title="'Alt Lookup'" sortable="'altLookup'">
-                {{user.altLookup}}
+                {{product.altLookup}}
               </td>
               <td data-title="'Brand'" sortable="'brand'">
-                {{user.brand}}
+                {{product.brand}}
               </td>
               <td data-title="'In-Store'" sortable="'storePrice'">
-                {{user.storePrice}}
+                {{product.storePrice}}
               </td>
               <td data-title="'Price'" sortable="'price'">
-                {{user.price}}
+                {{product.price}}
               </td>
               <td data-title="'Comp1'" sortable="'comp1Price'">
-                {{user.comp1Price}}
+                {{product.comp1Price}}
               </td>
               <td data-title="'Comp2'" sortable="'comp2Price'">
-                {{user.comp2Price}}
+                {{product.comp2Price}}
               </td>
             </tr>
           </table>

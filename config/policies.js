@@ -22,6 +22,9 @@ module.exports.policies = {
   '*':['forbidden'],
   'PagesController':true,
   'AuthController':true,
+  'ProductController':true,
+  'CompProductController':true,
+  'StoreController':true,
   'UserController':{
     '*':['sessionAuth'],
     'create':true
